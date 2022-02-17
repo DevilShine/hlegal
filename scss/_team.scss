@@ -1,0 +1,49 @@
+.switch {
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  background-color: #24A3FF;
+}
+// main-team-item-picture main-team-item-wrap 
+.main {
+  &-team {
+    &-wrap {
+      margin: 60px auto 106px;
+      border-radius: 16px;
+    }
+    &-item {
+      &-picture {
+        max-width: 400px;
+      }
+      &-text {
+        max-width: 1140px;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 38px;
+        line-height: 46px;
+        font-weight: 700;
+      }
+      &-wrap {
+        background-color: #F5F5FA;
+        border-radius: 12px;
+        align-items: center;
+      }
+      &-user {
+        color: #B3B3BA;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        &__weight {
+          margin-top: 6px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
