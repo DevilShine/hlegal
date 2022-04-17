@@ -1,4 +1,6 @@
 .switch {
+  margin-right: 15px;
+  margin-left: 15px;
   border-radius: 50%;
   position: relative;
   top: 70px;
@@ -7,6 +9,8 @@
   width: 16px;
   height: 16px;
   background-color: #24A3FF;
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
 }
 // main-team-item-picture main-team-item-wrap 
 .main {

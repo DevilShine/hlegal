@@ -58,3 +58,18 @@
     }
   }
 }
+
+.carus-left-side-line {
+  display: flex;
+  flex-direction: row;
+}
+.line-indicator {
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 60px;
+  height: auto;
+  &-stayl {  
+    border-top: 0px solid transparent;
+  }
+}

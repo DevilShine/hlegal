@@ -59,6 +59,7 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #FFFFFF;
 }
 
 .main-wrap {
@@ -484,7 +485,33 @@ body {
   line-height: 30px;
 }
 
+.carus-left-side-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.line-indicator {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  margin-right: 60px;
+  height: auto;
+}
+
+.line-indicator-stayl {
+  border-top: 0px solid transparent;
+}
+
 .positive-qualities-link {
+  max-width: 73px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -574,6 +601,8 @@ body {
 }
 
 .switch {
+  margin-right: 15px;
+  margin-left: 15px;
   border-radius: 50%;
   position: relative;
   top: 70px;
@@ -583,6 +612,8 @@ body {
   width: 16px;
   height: 16px;
   background-color: #24A3FF;
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
 }
 
 .main-team-wrap {
@@ -632,4 +663,77 @@ body {
   color: #323264;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.clients-grid-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: (120px)[3];
+      grid-template-rows: repeat(3, 120px);
+}
+
+.clients-grid-itam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients-grid-itam__blue {
+  background-color: #1C4280;
+  border-top-left-radius: 12px;
+}
+
+.clients-grid-itam__dark-green {
+  background-color: #143646;
+}
+
+.clients-grid-itam__dark-orange {
+  background-color: #F48B30;
+}
+
+.clients-grid-itam__purple {
+  background-color: #9E4DC3;
+  border-top-right-radius: 12px;
+}
+
+.clients-grid-itam__orange {
+  background-color: #FD9339;
+}
+
+.clients-grid-itam__grey {
+  background-color: #E2E2E4;
+}
+
+.clients-grid-itam__red {
+  background-color: #C71C36;
+}
+
+.clients-grid-itam__light-blue {
+  background-color: #DCF3F9;
+}
+
+.clients-grid-itam__dark-grey {
+  background-color: #EAEAEA;
+  border-bottom-left-radius: 12px;
+}
+
+.clients-grid-itam__dark-purple {
+  background-color: #282240;
+}
+
+.clients-grid-itam__dark-blue {
+  background-color: #1D4568;
+}
+
+.clients-grid-itam__black {
+  background-color: #000000;
+  border-bottom-right-radius: 12px;
 }
