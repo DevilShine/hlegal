@@ -1,0 +1,75 @@
+.experiens {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 60px;
+  &-nav {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #B3B3BA;
+    margin-right: 45px;
+    &-head {
+      user-select: none;
+      background: -webkit-linear-gradient(right, #F0145A, #EF8080);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 211px;
+      margin: 15px;
+      margin-top: 14.5px;
+    }
+    &-text {
+      user-select: none;
+      margin: 15px;
+      &:hover {
+        color: #F0145A;
+      }
+    }
+    &-text:last-child {
+      margin-bottom: 14.5px;
+    }
+  }
+  &-line {
+    margin-right: 60px;
+    width: 4px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  &-content {
+    max-width: 861px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &-header {
+      font-weight: 700;
+      color: #FFFFFF;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 30px;
+    }
+    &-text {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+
+.carus-left-side-line {
+  display: flex;
+  flex-direction: row;
+}
+.line-indicator {
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 60px;
+  height: auto;
+  &-stayl {  
+    border-top: 0px solid transparent;
+  }
+}

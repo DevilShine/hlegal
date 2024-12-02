@@ -1,0 +1,246 @@
+.main-wrap {
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.header-wrap {
+  margin-top: 50px;
+}
+
+.main-wrap-bg {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow-x: hidden;
+  &__object {
+    position: absolute;
+    height: 100%;
+  }
+}
+
+.section-gradient {
+  background: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+  min-height: 100vh;
+  margin-bottom: 20px;
+  position: relative;
+  &__shadow {
+    position: absolute;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+  }
+  &__shadow--1 {
+    bottom: -10px;
+    width: calc(100% - 40px);
+    left: 20px;
+    background: #cacadb;
+  }
+  &__shadow--2 {
+    bottom: -20px;
+    width: calc(100% - 80px);
+    left: 40px;
+    background: #e7e7f2;
+  }
+}
+
+.section-first {
+  min-height: 100vh;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header,
+  &__title,
+  &__button {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+  }
+  &__title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  &__button {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 13px;
+    &-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.5;
+      width: 42px;
+      height: 42px;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      &:hover {
+        border: 2px solid #F0145A;
+        .section-first__button-arrow {
+          border-bottom: 2px solid #F0145A;
+          border-left: 2px solid #F0145A;
+        }
+      }
+    }
+    &-arrow {
+      margin-bottom: 6px;
+      width: 12.7px;
+      height: 12.7px;
+      border-bottom: 2px solid #FFFFFF;
+      border-left: 2px solid #FFFFFF;
+      transform: rotate(315deg);
+    }
+  }
+}
+
+.header-grid {
+  display: flex;
+  color: white;
+  display: grid;
+  grid-template-areas:
+  "logo info"
+  "logo nav";
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "info"
+      "logo"
+      "nav";
+    .header-grid__info {
+      margin-bottom: 30px;
+    }
+    .header-grid__nav {
+      margin-top: 30px;
+      justify-content: flex-start;
+    }
+  }
+  &__logo {
+    grid-area: logo;
+  }
+  &__info {
+    margin-bottom: 16px;
+    grid-area: info;
+    display: flex;
+    align-items: center;
+    &-language {
+      user-select: none;
+      cursor: pointer;
+      padding: 5px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 8px;
+      &:hover {
+        background-color: #FFFFFF33;
+      }
+      &:active {
+        background-color: #F0145A;
+      }
+      &__red {
+        background-color: #F0145A;
+        &:hover {
+          background-color: #F0145A;
+        }
+      }
+    }
+    &-f {
+      &-red {
+        display: none;
+        padding-bottom: 4px;
+      }
+      &:hover {
+        .header-grid__info-f-white {
+          display: none;
+        }
+        .header-grid__info-f-red {
+          display: block;
+        }
+      }
+    }
+    &-location {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &-number {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &-circle {
+      width: 6px;
+      height: 6px;
+      background-color: #E6E6F0;
+      border-radius: 50%;
+      margin: 0 6px;
+    }
+  }
+  &__nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: end;
+    &-item:first-child {
+      margin-left: 0;
+    }
+    &-item {
+      color: #FFFFFF;
+      cursor: pointer;
+      margin-left: 15px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      user-select: none;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid #FFFFFF;
+      }
+      &:active {
+        border-bottom: 2px solid #F0145A;
+        color: #F0145A;
+      }
+    }
+  }
+}
+
+.logo {
+  &-hlegal {
+    display: flex;
+    align-items: center;
+    &-style {
+      margin-right: 4px;
+    }
+    &-slash {
+      margin-right: 4px;
+      display: none;
+    }
+    &-text {
+      font-size: 36px;
+      line-height: 44px;
+      display: none;
+    }
+  }
+  &-law_company {
+    display: block;
+    margin-top: 6px;
+  }
+}
